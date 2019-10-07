@@ -13,8 +13,8 @@
   "scripts": {
     "ng": "ng serve",
     "clean": "rimraf dist",
-    "prestart": "npm run build",
-    "start": "electron .",
+    "start-electron": "wait-on http://localhost:4200 && electron .",
+    "start": "concurrently -k \"ng serve\" \"npm run start-electron\"",
     "prebuild": "npm run clean",
     "build": "ng build",
     "test": "ng test",
