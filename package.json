@@ -24,6 +24,7 @@
     "release": "electron-builder"
   },
   "private": true,
+  "repository": {},
   "dependencies": {
     "@angular/animations": "~8.2.8",
     "@angular/common": "~8.2.8",
