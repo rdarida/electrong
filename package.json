@@ -1,12 +1,12 @@
 {
   "name": "electrong",
   "version": "0.0.0",
-  "main": "main.js",
+  "main": "index.js",
   "build": {
     "appId": "com.electon.Electrong",
     "productName": "Electrong",
     "files": [
-      "main.js",
+      "index.js",
       "dist/electrong"
     ]
   },
