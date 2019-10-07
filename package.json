@@ -1,12 +1,11 @@
 {
   "name": "electrong",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/electrong/index.js",
   "build": {
     "appId": "com.electon.Electrong",
     "productName": "Electrong",
     "files": [
-      "index.js",
       "dist/electrong"
     ]
   },
@@ -14,6 +13,7 @@
     "ng": "ng serve",
     "clean": "rimraf dist",
     "start-electron": "wait-on http://localhost:4200 && electron .",
+    "prestart": "npm run clean",
     "start": "concurrently -k \"ng serve\" \"npm run start-electron\"",
     "prebuild": "npm run clean",
     "build": "ng build",
