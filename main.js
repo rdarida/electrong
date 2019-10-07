@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadFile('dist/electrong/index.html')
+  win.loadURL('http://localhost:4200')
 
   // Open the DevTools.
   // win.webContents.openDevTools()
